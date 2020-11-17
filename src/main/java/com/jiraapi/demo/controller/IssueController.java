@@ -52,7 +52,7 @@ public class IssueController {
 
     @RequestMapping("/{id}/assignTo={username}")
     public ResponseEntity<String> assignTo(@PathVariable String id, @PathVariable String username) {
-        return ResponseEntity.ok(issueService.addAssigne(id, username));
+        return ResponseEntity.ok(issueService.addAssigne(id , username));
     }
 
     @PostMapping("/{id}/comment")
